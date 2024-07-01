@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.user-data {
+    color: white;
+    position: absolute;
+    top: 200px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    background-color: #00000088;
+    padding: 12px;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.button:hover {
+    background-color: #000000bb;
+    cursor: pointer;
+}

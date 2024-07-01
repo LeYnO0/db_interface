@@ -1,0 +1,94 @@
+body {
+    font-size: 16px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e) no-repeat;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    max-width: 320px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 200px;
+}
+
+.form-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    border-radius: 15px;
+}
+
+.reg-btn,
+.clear-btn,
+.home-button {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+
+    border: 0;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+
+    border-radius: 10px;
+}
+
+.reg-btn {
+    background-color: #1cbc11;
+}
+
+.reg-btn:hover {
+    background-color: #14a20a;
+}
+
+.clear-btn {
+    margin-top: 10px;
+    background-color: #9c9c9c;
+}
+
+.clear-btn:hover {
+    background-color: #595959;
+}
+
+.home-button {
+    background-color: #0000ffc7;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.home-button:hover {
+    background-color: #0000fff7;
+}
+
+.error-msg {
+    color: #fff;
+    text-align: center;
+    background: red;
+    width: 31%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 8px;
+}

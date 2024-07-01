@@ -1,0 +1,21 @@
+body {
+    color: #fff;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e) no-repeat;
+    height: 100vh;
+}
+
+.exit-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.name,
+.surname {
+    color: #fff;
+    text-decoration: none;
+}
+th{
+    padding: 20px;
+}
