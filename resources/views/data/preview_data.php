@@ -40,13 +40,16 @@ $full_data = mysqli_query($connect, "SELECT * FROM users");
                         <?php
                         if ($full_data) {
                             foreach ($full_data as $string) { ?>
+                                <!--loop through each line of the sample-->
                                 <tr class="string">
+                                    <!-- form a table from the data obtained by selecting all users. Put the data in the tag a -->
                                     <td><a><?= $string['id'] ?></a></td>
                                     <td><a class="name"><?= $string['name'] ?></a></td>
                                     <td><a class="surname"><?= $string['surname'] ?></a></td>
-                                    <td><a href="../../../app/controllers/ShowUserController.php?id=<?= $string['id'] ?>" class="btn btn-outline-info btn-sm">Подробнее</a></td>
-                                    <td><a href="../../views/data/edit_data.php?id=<?= $string['id'] ?>" class="btn btn-outline-success btn-sm">Изменить</a></td>
-                                    <td><a href="../../../app/controllers/DeleteUserController.php?id=<?= $string['id'] ?>" class="btn btn-outline-danger btn-sm">Удалить</a></td>
+                                    <!-- in this and the following tags it is necessary to pass user id in the get-parameter to work with them in third-party controllers -->
+                                    <td><a class="btn btn-outline-info btn-sm" href="../../../app/controllers/ShowUserController.php?id=<?= $string['id'] ?>">Подробнее</a></td>
+                                    <td><a class="btn btn-outline-success btn-sm" href="../../views/data/edit_data.php?id=<?= $string['id'] ?>">Изменить</a></td>
+                                    <td><a class="btn btn-outline-danger btn-sm" href="../../../app/controllers/DeleteUserController.php?id=<?= $string['id'] ?>">Удалить</a></td>
                                 </tr>
                         <?php }
                         } ?>

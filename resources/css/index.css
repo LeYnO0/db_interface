@@ -1,4 +1,4 @@
-body{
+body {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -8,7 +8,8 @@ body{
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
-.main{
+
+.main {
 	width: 450px;
 	height: 700px;
 	background: red;
@@ -17,12 +18,14 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
-.signup{
+
+.signup {
 	position: relative;
-	width:100%;
+	width: 100%;
 	height: 100%;
 }
-label{
+
+label {
 	color: #fff;
 	font-size: 2.3em;
 	justify-content: center;
@@ -32,7 +35,8 @@ label{
 	cursor: pointer;
 	transition: .5s ease-in-out;
 }
-input{
+
+input {
 	width: 60%;
 	height: 20px;
 	background: #e0dede;
@@ -44,7 +48,8 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
-button{
+
+button {
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
@@ -61,24 +66,26 @@ button{
 	transition: .2s ease-in;
 	cursor: pointer;
 }
-button:hover{
+
+button:hover {
 	background: #6d44b8;
 }
 
-a{
+a {
 	color: #6d44b8;
 	text-decoration: none;
 
 }
 
-.singin{
+.singin {
 	height: 460px;
 	background: #eee;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
 }
-.issue{
+
+.issue {
 	color: #fff;
 	font-size: 1.0em;
 	justify-content: center;
@@ -86,12 +93,15 @@ a{
 	margin: 60px;
 	font-weight: bold;
 	cursor: pointer;
-	transition: .5s ease-in-out;;
+	transition: .5s ease-in-out;
+	;
 }
-.issue a{
+
+.issue a {
 	margin-left: 6px;
 }
-.msg{
+
+.msg {
 	color: #fff;
 	font-size: 1.0em;
 	text-align: center;
@@ -101,23 +111,26 @@ a{
 	font-weight: bold;
 	cursor: pointer;
 	transition: .5s ease-in-out;
-	border: 5px solid #573b8a;;
+	border: 5px solid #573b8a;
+	;
 	border-radius: 50px;
 	padding: 10px;
 
 }
 
-.singin label{
+.singin label {
 	color: #573b8a;
 	transform: scale(.6);
 }
 
-#chk:checked ~ .login{
+#chk:checked~.login {
 	transform: translateY(-500px);
 }
-#chk:checked ~ .login label{
-	transform: scale(1);	
+
+#chk:checked~.login label {
+	transform: scale(1);
 }
-#chk:checked ~ .signup label{
+
+#chk:checked~.signup label {
 	transform: scale(.6);
 }
